@@ -20,7 +20,7 @@ function showCart() {
             <h2>Mahsulot: ${e.name}</h2>
             <h3>Narxi: <del>${e.price}</del> so'm</h3>
             <h3>Chegirmada :${e.price - 9000.1} so'm</h3>
-            <button onClick="remove('${e.id}')">Bekor qilish</button>
+            <button onClick="removeFromCart('${e.id}')">Bekor qilish</button>
           </div>`
     );
   });

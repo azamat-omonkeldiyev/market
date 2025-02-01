@@ -6,6 +6,14 @@
   body {
     background-color: rgb(7, 162, 110);
   }
+  #som{
+    padding: 10px;
+    margin: 0 auto;  
+    justify-content: center;
+    background-color: cyan;
+    border: 3px solid black; 
+    width: fit-content; 
+}
   
   #root {
     display: flex;
@@ -42,5 +50,15 @@
     margin: 10px;
     padding: 10px;
     border: 5px solid black;
+  }
+  #back{
+    margin: 5px; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    background-color:bisque; 
+    border-radius: 10px; 
+    /* position: absolute; */
+    top: 0; 
+    left: 0; 
   }
   
