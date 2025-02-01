@@ -21,7 +21,6 @@ function showData(arr) {
           <h3>Chegirmada :${e.price - 9000.1} so'm</h3>
           <button onClick=deleteProduct(${e.id})>DELETE</button>
           <button onClick=updateProduct(${e.id})>UPDATE</button>
-          <button onClick= buyProduct(${e.id})>BUY</button>
         </div>`
     );
   });
