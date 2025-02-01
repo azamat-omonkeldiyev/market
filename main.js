@@ -30,36 +30,7 @@ const api = axios.create({
 });
 api.get("/products").then((res) => showData(res.data));
 
- async function createProduct() {
-  if (!iImg.value || !iName.value || !iPrice.value) {
-    confirm("Hamma maydonlarni to'ldiring");
-    return;
-  }
-    await api.post("/products", {
-      name: iName.value,
-      price: iPrice.value,
-      rasm: iImg.value,
-    });
-    location.reload();
-}
-
-async function updateProduct(son) {
-  if (!iImg.value || !iName.value || !iPrice.value) {
-    confirm("Hamma maydonlarni to'ldiring");
-    return;
-  }
-  await api.put(`/products/${son}`, {
-      name: iName.value,
-      price: iPrice.value,
-      rasm: iImg.value,
-    })
-    location.reload();
-}
-
-async function deleteProduct(son) {
-      await api.delete(`/products/${son}`);
-      location.reload()
-}
+// 
 
 async function buyProduct(id) {
 
@@ -74,4 +45,4 @@ async function buyProduct(id) {
     localStorage.setItem("Product", JSON.stringify(arr));
 }
 
-addBtn.addEventListener("click", createProduct);
+// addBtn.addEventListener("click", createProduct);

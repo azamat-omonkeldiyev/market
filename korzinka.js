@@ -1,18 +1,19 @@
 
-let cartRoot = document.querySelector("#Product");
+
+let cartRoot = document.querySelector("#cart-root");
 
 function showCart() {
   let sum = 0;
   let a = localStorage.getItem("Product");
   let arr = JSON.parse(a);
-  root.innerHTML = "";
+  cartRoot.innerHTML = "";
   narx.innerHTML = "";
   arr.forEach((e) => {
     sum += Number(e.price);
   });
   narx.insertAdjacentHTML("beforeend", `<h1>Ummumiy summa : ${sum} so'm</h1>`);
   arr.forEach((e) => {
-    root.insertAdjacentHTML(
+    cartRoot.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
             <img src="${e.rasm}" alt="">
